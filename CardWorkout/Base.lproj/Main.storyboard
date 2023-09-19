@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="haL-P5-t5V">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,12 +13,12 @@
         <scene sceneID="ngM-zL-lL2">
             <objects>
                 <viewController id="haL-P5-t5V" customClass="CardSelectionViewController" customModule="CardWorkout" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5Ut-uv-9IO">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="5Ut-uv-9IO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10C" translatesAutoresizingMaskIntoConstraints="NO" id="vWw-G5-A0X">
-                                <rect key="frame" x="71.666666666666686" y="151" width="250" height="350"/>
+                                <rect key="frame" x="71.666666666666686" y="79" width="250" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="GQK-ds-5jf"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="YJS-zm-0qw"/>
@@ -26,7 +27,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QY1-Jg-SjK">
-                                <rect key="frame" x="66.666666666666686" y="561" width="260" height="50"/>
+                                <rect key="frame" x="66.666666666666686" y="489" width="260" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="Lmw-Dh-sS9"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="d7L-f7-mH5"/>
@@ -44,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Pq-cB-rzd">
-                                <rect key="frame" x="66.666666666666671" y="631" width="115.00000000000001" height="50"/>
+                                <rect key="frame" x="66.666666666666671" y="559" width="115.00000000000001" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ESH-6b-Wtk"/>
                                     <constraint firstAttribute="height" constant="50" id="G4a-1P-V14"/>
@@ -62,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCq-Rb-JM4">
-                                <rect key="frame" x="211.66666666666663" y="631" width="115" height="50"/>
+                                <rect key="frame" x="211.66666666666663" y="559" width="115" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="H2z-fc-fvG"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="KrF-e0-x1r"/>
@@ -90,6 +91,7 @@
                             <constraint firstItem="vWw-G5-A0X" firstAttribute="centerX" secondItem="5Ut-uv-9IO" secondAttribute="centerX" id="dhc-69-mTI"/>
                             <constraint firstItem="iCq-Rb-JM4" firstAttribute="trailing" secondItem="QY1-Jg-SjK" secondAttribute="trailing" id="gVg-hc-mhz"/>
                             <constraint firstItem="5Pq-cB-rzd" firstAttribute="leading" secondItem="QY1-Jg-SjK" secondAttribute="leading" id="pvR-eB-AkU"/>
+                            <constraint firstItem="vWw-G5-A0X" firstAttribute="top" secondItem="y68-3n-pyF" secondAttribute="top" constant="20" id="sU2-nx-CKf"/>
                             <constraint firstItem="5Pq-cB-rzd" firstAttribute="top" secondItem="QY1-Jg-SjK" secondAttribute="bottom" constant="20" id="x05-re-MLQ"/>
                         </constraints>
                     </view>
